@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-    width: auto;
+    width: 80%; /* Set a max width for responsiveness */
+    max-width: 1200px; /* Maximum width for large screens */
     margin: 40px auto;
     padding: 30px;
     background-color: #3c404d; 
@@ -46,6 +47,7 @@ h1 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative; /* Added for proper positioning of images */
 }
 
 .card img {
@@ -73,4 +75,8 @@ h1 {
 #start-game:hover {
     background-color: #43a047; /* Darker on hover */
     transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+#start-game:active {
+    transform: scale(1); /* Reset scale when button is clicked */
 }
